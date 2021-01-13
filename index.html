@@ -206,9 +206,11 @@
             <input type="url" id="website" name="website" /><br /><br />
             <label for="website">Resume:</label>
             <input type="file" id="file" name="file" /><br /><br />
-            <label for="satisfaction">How much did you like this page?:</label>
+            <label for="like">How much did you like this page?:</label>
             <input type="range" id="range" name="range" /><br /><br />
-            <label for="troll">Are there too many questions in this form</label>
+            <label for="questions"
+              >Are there too many questions in this form</label
+            >
             <select name="options" id="options">
               <optgroup label="Don't lie">
                 <option value="yes">Yes</option>
@@ -216,10 +218,14 @@
               </optgroup>
             </select>
             <br /><br />
-            <label for="troll2">Explain why:</label><br />
+            <label for="why">Explain why:</label><br />
             <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
             <br /><br />
             <table>
+              <colgroup>
+                <col span="2" style="background-color: white" />
+                <col style="background-color: white" />
+              </colgroup>
               <caption>
                 Some stats...
               </caption>
@@ -227,10 +233,6 @@
                 <th>Browser</th>
                 <th>Percentage</th>
               </tr>
-              <colgroup>
-                <col span="2" style="background-color: white" />
-                <col style="background-color: white" />
-              </colgroup>
               <tr>
                 <td>Edge</td>
                 <td>0%</td>
