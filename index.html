@@ -177,96 +177,98 @@
     </svg>
     <br />
     <button type="button">This button literally does nothing :(</button>
+    <footer>
+      <hr />
+      <h3>Source</h3>
+      <a href="https://github.com/MelinUCSD/cse110_lab2">View Repository</a>
+      <br /><br />
+      <section>
+        <form>
+          <fieldset>
+            <legend><b>Who is reading this page?</b></legend>
+            <label for="fname"
+              >I agree to share the following information</label
+            >
+            <input type="checkbox" id="box" name="box" /><br /><br />
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel" /><br /><br />
+            <label for="week">What week is today?:</label>
+            <input type="week" id="week" name="week" /><br /><br />
+            <label for="week">What time is today?:</label>
+            <input type="time" id="time" name="time" /><br /><br />
+            <label for="website">Your website:</label>
+            <input type="url" id="website" name="website" /><br /><br />
+            <label for="website">Resume:</label>
+            <input type="file" id="file" name="file" /><br /><br />
+            <label for="satisfaction">How much did you like this page?:</label>
+            <input type="range" id="range" name="range" /><br /><br />
+            <label for="troll">Are there too many questions in this form</label>
+            <select name="options" id="options">
+              <optgroup label="Don't lie">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </optgroup>
+            </select>
+            <br /><br />
+            <label for="troll2">Explain why:</label><br />
+            <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
+            <br /><br />
+            <table>
+              <caption>
+                Some stats...
+              </caption>
+              <tr>
+                <th>Browser</th>
+                <th>Percentage</th>
+              </tr>
+              <colgroup>
+                <col span="2" style="background-color: white" />
+                <col style="background-color: white" />
+              </colgroup>
+              <tr>
+                <td>Edge</td>
+                <td>0%</td>
+              </tr>
+              <tr>
+                <td>Firefox</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Chrome</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <td>Opera</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <td>Safari</td>
+                <td>15%</td>
+              </tr>
+            </table>
+            <br />
+            <label for="browser"
+              >Select the browser are you using to view this page:</label
+            >
+            <input list="browsers" name="browser" id="browser" />
+            <datalist id="browsers">
+              <option value="Edge"></option>
+              <option value="Firefox"></option>
+              <option value="Chrome"></option>
+              <option value="Opera"></option>
+              <option value="Safari"></option>
+            </datalist>
+            <br /><br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </footer>
   </body>
-  <footer>
-    <hr />
-    <h3>Source</h3>
-    <a href="https://github.com/MelinUCSD/cse110_lab2">View Repository</a>
-    <br /><br />
-    <section>
-      <form>
-        <fieldset>
-          <legend><b>Who is reading this page?</b></legend>
-          <label for="fname">I agree to share the following information</label>
-          <input type="checkbox" id="box" name="box" /><br /><br />
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
-          <label for="tel">Telephone:</label>
-          <input type="tel" id="tel" name="tel" /><br /><br />
-          <label for="week">What week is today?:</label>
-          <input type="week" id="week" name="week" /><br /><br />
-          <label for="week">What time is today?:</label>
-          <input type="time" id="time" name="time" /><br /><br />
-          <label for="website">Your website:</label>
-          <input type="url" id="website" name="website" /><br /><br />
-          <label for="website">Resume:</label>
-          <input type="file" id="file" name="file" /><br /><br />
-          <label for="satisfaction">How much did you like this page?:</label>
-          <input type="range" id="range" name="range" /><br /><br />
-          <label for="troll">Are there too many questions in this form</label>
-          <select name="options" id="options">
-            <optgroup label="Don't lie">
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </optgroup>
-          </select>
-          <br /><br />
-          <label for="troll2">Explain why:</label><br />
-          <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
-          <br /><br />
-          <table>
-            <caption>
-              Some stats...
-            </caption>
-            <tr>
-              <th>Browser</th>
-              <th>Percentage</th>
-            </tr>
-            <colgroup>
-              <col span="2" style="background-color: white" />
-              <col style="background-color: white" />
-            </colgroup>
-            <tr>
-              <td>Edge</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Firefox</td>
-              <td>20%</td>
-            </tr>
-            <tr>
-              <td>Chrome</td>
-              <td>60%</td>
-            </tr>
-            <tr>
-              <td>Opera</td>
-              <td>5%</td>
-            </tr>
-            <tr>
-              <td>Safari</td>
-              <td>15%</td>
-            </tr>
-          </table>
-          <br />
-          <label for="browser"
-            >Select the browser are you using to view this page:</label
-          >
-          <input list="browsers" name="browser" id="browser" />
-          <datalist id="browsers">
-            <option value="Edge"></option>
-            <option value="Firefox"></option>
-            <option value="Chrome"></option>
-            <option value="Opera"></option>
-            <option value="Safari"></option>
-          </datalist>
-          <br /><br />
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-    </section>
-  </footer>
 </html>
