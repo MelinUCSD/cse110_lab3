@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Matias Lin" />
+    <meta name="description" content="Personal website using HTML" />
+    <h1 id="top">Matias Lin</h1>
+  </head>
+  <hr />
+  <details>
+    <summary>How to pronounce my first name</summary>
+    <audio controls preload="auto">
+      <!-- Relative paths were not working -->
+      <!-- <source src="./audios/pronunciation.mp3" type="audio/mpeg" /> -->
+      <!-- Embedded videos from Google Drive -->s
+      <source
+        srcset="
+          https://drive.google.com/uc?export=download&id=1oDALYS8XVYFb2IgRGt_WbWmtM4ya9SB2
+        "
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio tag.
+    </audio>
+  </details>
+  <details>
+    <summary>This is me</summary>
+    <video width="100%" height="100%" muted loop autoplay>
+      <!-- Relative paths were not working -->
+      <!-- <source src="./videos/hello.mp4" type="video/mp4" /> -->
+      <!-- Embedded videos from Google Drive -->
+      <source
+        src="https://drive.google.com/uc?export=download&id=1dCys8TKDxxesnTE4Y03xV1EPL9Fwo0sT"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <template> </template>
+  </details>
+
+  <body style="font-family: calibri">
+    <h2>What is this page about?</h2>
+    <p>
+      Hopefully this page will serve as a small introduction to who I am and
+      some of my interests. Note that this page is not meant to be
+      comprehensive, its main purpose is to practice utilizing Github Pages and
+      Markdown files.
+    </p>
+
+    <nav>
+      <h2>Table of contents</h2>
+      <ul>
+        <li><a href="#main">A little about myself</a></li>
+        <li><a href="#favorite-food">Favorite food</a></li>
+        <li><a href="#bucket">Bucket list for this quarter</a></li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <h2>About me</h2>
+      <p>
+        I’m Matias Lin and I’m currently in my third year studtying
+        bioinformatics. I was born in Buenos Aires, Argentina and I lived there
+        basically my whole life before moving here for college. I’m really
+        interested in machine learning and its potential in the area of biology.
+        I’m currently working as a research assistant at UCSD Health in the
+        Alexandrov’s Lab, where I’m in charge to optimize one of the pipelines
+        so that we can better diagnose different kinds of cancer. In order to do
+        so, I’m utilizing a machine learning approach that involves CNNs to
+        reduce the resources needed to execute the pipeline. One of the recent
+        command lines that I’ve used is the following:
+      </p>
+      <span style="border: 1px solid green"
+        ><code>shuf -n 10 -e *.vcf | xargs -i mv {} data/</code></span
+      >
+    </main>
+
+    <section id="favorite-food">
+      <h2>Favorite food</h2>
+      <p>
+        Having lived in Argentina for more than 17 years, it is not surprising
+        that I have a big list of favorite foods. Here are the descriptions of a
+        few of my favorite foods. <br /><br />
+        <b><i>Milanesa Napolitana</i></b> is similar to veals parmesan, but with
+        South American touches. After the steak is breaded and fried, it’s
+        topped with a slice of ham, tomato sauce, and melted mozzarella cheese,
+        and served with french fries. Leftovers make great sandwiches,
+        especially when paired with a soft but crusty roll. Milanesa a la
+        Napolitana does not originate from Milan or Naples; it’s thought to have
+        been invented in the 1940s at a <strong><em>Buenos Aires</em></strong
+        >. When I was in Argentina we used to say: <br /><br /><i
+          >"Che, querés ir a comer una napo?"</i
+        >
+      </p>
+      <figure>
+        <img src="images/napo.jpg" alt="Milanesa napolitana" width="50%" />
+        <figcaption><i>Milanesa napolitana con papa fritas.</i></figcaption>
+      </figure>
+      <aside>
+        <p>
+          You can read more about <i> Milanesa Napolitana </i>
+          <a
+            href="https://www.thespruceeats.com/milanesa-napolitana-argentinian-fried-steak-3029473?utm_source=emailshare&utm_medium=social&utm_campaign=shareurlbuttons"
+            >here</a
+          >.
+        </p>
+      </aside>
+      <p>
+        Empanadas are hand-sized savory pies that can be found all over South
+        America. In Argentina, every province has its own variety. All follow
+        the same basic culinary guideline — a soft pocket of dough that’s
+        stuffed with a scrumptious, savory filling. There are a lot of
+        variations to this kind of food but some of my favorites have the
+        following fillings: “carne picante” and “humita”.
+      </p>
+      <picture>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/empanada_carne_picante.jpg"
+              alt="Empanadas de carne"
+              style="width: 50%"
+            />
+          </div>
+          <pre
+            style="font-family: arial; font-size: 13px"
+          ><i>                        ^ Empanada de carne picante 
+                        v Empanada de humita </i></pre>
+          <div class="column">
+            <img
+              src="images/empanada_humita.jpg"
+              alt="Empanadas de humita"
+              style="width: 50%"
+            />
+          </div>
+        </div>
+      </picture>
+      <aside>
+        <p>
+          You can read more about <i> Empanadas </i>
+          <a
+            href="https://theculturetrip.com/south-america/argentina/articles/a-brief-history-of-the-empanada/"
+            >here</a
+          >.
+        </p>
+      </aside>
+    </section>
+    <section id="bucket">
+      <h2>A few things I want to learn this quarter</h2>
+      <ol>
+        <li>Learn Javascript</li>
+        <li>Learn CSS</li>
+      </ol>
+    </section>
+    <canvas id="tmp">Your browser does not support the canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("tmp");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "green";
+      ctx.fillRect(0, 0, 400, 4);
+    </script>
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="white"
+      />
+      <text x="35" y="53" fill="black">Fin!</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <br />
+    <button type="button">This button literally does nothing :(</button>
+  </body>
+  <hr />
+  <footer>
+    <h3>Source</h3>
+    <a href="https://github.com/MelinUCSD/cse110_lab2">View Repository</a>
+    <br /><br />
+    <section>
+      <form>
+        <fieldset>
+          <legend><b>Who is reading this page?</b></legend>
+          <label for="fname">I agree to share the following information</label>
+          <input type="checkbox" id="fname" name="fname" /><br /><br />
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="tel">Telephone:</label>
+          <input type="tel" id="tel" name="tel" /><br /><br />
+          <label for="week">What week is today?:</label>
+          <input type="week" id="week" name="week" /><br /><br />
+          <label for="week">What time is today?:</label>
+          <input type="time" id="time" name="time" /><br /><br />
+          <label for="website">Your website:</label>
+          <input type="url" id="website" name="website" /><br /><br />
+          <label for="website">Resume:</label>
+          <input type="file" id="file" name="file" /><br /><br />
+          <label for="satisfaction">How much did you like this page?:</label>
+          <input type="range" id="range" name="range" /><br /><br />
+          <label for="troll">Are there too many questions in this form</label>
+          <select name="options" id="options">
+            <optgroup label="Don't lie">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </optgroup>
+          </select>
+          <br /><br />
+          <label for="troll2">Explain why:</label><br />
+          <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
+          <br /><br />
+          <table>
+            <caption>
+              Some stats...
+            </caption>
+            <tr>
+              <th>Browser</th>
+              <th>Percentage</th>
+            </tr>
+            <colgroup>
+              <col span="2" style="background-color: white" />
+              <col style="background-color: white" />
+            </colgroup>
+            <tr>
+              <td>Edge</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>Firefox</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Chrome</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <td>Opera</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>Safari</td>
+              <td>15%</td>
+            </tr>
+          </table>
+          <br />
+          <label for="browser"
+            >Select the browser are you using to view this page:</label
+          >
+          <input list="browsers" name="browser" id="browser" />
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </section>
+  </footer>
+</html>
