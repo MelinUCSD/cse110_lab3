@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <title>Matias Lin</title>
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Matias Lin" />
     <meta name="description" content="Personal website using HTML" />
+    <title>Matias Lin</title>
     <h1>Matias Lin</h1>
   </head>
 
@@ -92,7 +92,11 @@
         >
       </p>
       <figure>
-        <img src="images/napo.jpg" alt="Milanesa napolitana" width="50%" />
+        <img
+          src="images/napo.jpg"
+          alt="Milanesa napolitana"
+          style="width: 50%"
+        />
         <figcaption><i>Milanesa napolitana con papa fritas.</i></figcaption>
       </figure>
       <aside>
@@ -112,28 +116,30 @@
         variations to this kind of food but some of my favorites have the
         following fillings: “carne picante” and “humita”.
       </p>
-      <picture>
-        <div class="row">
-          <div class="column">
+      <div class="row">
+        <div class="column">
+          <picture>
             <img
               src="images/empanada_carne_picante.jpg"
               alt="Empanadas de carne"
               style="width: 50%"
             />
-          </div>
-          <pre
-            style="font-family: arial; font-size: 13px"
-          ><i>                        ^ Empanada de carne picante 
+          </picture>
+        </div>
+        <pre
+          style="font-family: arial; font-size: 13px"
+        ><i>                        ^ Empanada de carne picante 
                         v Empanada de humita </i></pre>
-          <div class="column">
+        <div class="column">
+          <picture>
             <img
               src="images/empanada_humita.jpg"
               alt="Empanadas de humita"
               style="width: 50%"
             />
-          </div>
+          </picture>
         </div>
-      </picture>
+      </div>
       <aside>
         <p>
           You can read more about <i> Empanadas </i>
