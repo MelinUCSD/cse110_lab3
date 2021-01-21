@@ -5,20 +5,53 @@
     <meta name="author" content="Matias Lin" />
     <meta name="description" content="Personal website using HTML" />
     <title>Matias Lin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Internal CSS -->
+    <style>
+      h1 {
+        color: #111;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-align: center;
+      }
+
+      h2 {
+        color: #111;
+        font-family: s "Open Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 20psx;
+        text-align: left;
+        text-decoration: underline;
+      }
+
+      h3 {
+        color: #111;
+        font-family: "Open Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 20psx;
+        text-align: left;
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Matias Lin</h1>
     <hr />
     <details>
-      <summary>How to pronounce my first name</summary>
+      <summary id="audio">How to pronounce my first name</summary>
       <audio controls preload="auto">
         <source src="./audios/pronunciation.mp3" type="audio/mpeg" />
         Your browser does not support the audio tag.
       </audio>
     </details>
     <details>
-      <summary>This is me</summary>
+      <summary id="video">This is me</summary>
       <video style="width: 100%" muted loop autoplay>
         <source src="./videos/hello.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -38,12 +71,14 @@
       <h2>Table of contents</h2>
       <ul>
         <li><a href="#main">A little about myself</a></li>
-        <li><a href="#favorite-food">Favorite food</a></li>
-        <li><a href="#bucket">Bucket list for this quarter</a></li>
+        <li><a href="#favorite-food" target="_rlink2">Favorite food</a></li>
+        <li>
+          <a href="#bucket" target="_rlink3">Bucket list for this quarter</a>
+        </li>
       </ul>
     </nav>
 
-    <main id="main">
+    <main id="main" class="test">
       <h2>About me</h2>
       <p>
         I’m Matias Lin and I’m currently in my third year studtying
@@ -104,8 +139,8 @@
         variations to this kind of food but some of my favorites have the
         following fillings: “carne picante” and “humita”.
       </p>
-      <div class="row">
-        <div class="column">
+      <div id="sector" class="flex-container">
+        <div>
           <picture>
             <img
               src="images/empanada_carne_picante.jpg"
@@ -113,12 +148,11 @@
               style="width: 50%"
             />
           </picture>
+          <p style="font-family: arial; font-size: 13px" target="caption">
+            <i> ^ Empanada de carne picante </i>
+          </p>
         </div>
-        <pre
-          style="font-family: arial; font-size: 13px"
-        ><i>                        ^ Empanada de carne picante 
-                        v Empanada de humita </i></pre>
-        <div class="column">
+        <div>
           <picture>
             <img
               src="images/empanada_humita.jpg"
@@ -126,23 +160,32 @@
               style="width: 50%"
             />
           </picture>
+          <p style="font-family: arial; font-size: 13px" target="caption">
+            <i> ^ Empanada de humita </i>
+          </p>
         </div>
+        <aside>
+          <p>
+            You can read more about <i> Empanadas </i>
+            <a
+              href="https://theculturetrip.com/south-america/argentina/articles/a-brief-history-of-the-empanada/"
+              >here</a
+            >.
+          </p>
+        </aside>
       </div>
-      <aside>
-        <p>
-          You can read more about <i> Empanadas </i>
-          <a
-            href="https://theculturetrip.com/south-america/argentina/articles/a-brief-history-of-the-empanada/"
-            >here</a
-          >.
-        </p>
-      </aside>
     </section>
     <section id="bucket">
       <h2>A few things I want to learn this quarter</h2>
       <ol>
         <li>Learn Javascript</li>
+        <ul>
+          <li>JS</li>
+        </ul>
         <li>Learn CSS</li>
+        <ul>
+          <li>CSS</li>
+        </ul>
       </ol>
     </section>
     <canvas id="tmp">Your browser does not support the canvas tag.</canvas>
@@ -164,13 +207,21 @@
       <text x="35" y="53" fill="black">Fin!</text>
     </svg>
     <br />
-    <button type="button">This button literally does nothing :(</button>
+    <button id="useless" type="button">
+      This button literally does nothing :(
+    </button>
+    <div class="grid-container">
+      <div class="grid-item">Grid 1</div>
+      <div class="grid-item">Grid 2</div>
+      <div class="grid-item">Grid 3</div>
+      <div class="grid-item">Grid 4</div>
+    </div>
     <footer>
       <hr />
       <h3>Source</h3>
       <a href="https://github.com/MelinUCSD/cse110_lab2">View Repository</a>
       <br /><br />
-      <section>
+      <section id="questionnaire">
         <form>
           <fieldset>
             <legend><b>Who is reading this page?</b></legend>
