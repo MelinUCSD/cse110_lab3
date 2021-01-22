@@ -177,7 +177,7 @@ a:active {
   }
 }
 
-/* Media Query */
+/* Media Query CSS Topic part 2*/
 @media only screen and (max-width: 10px) {
   body {
     background-color: black;
