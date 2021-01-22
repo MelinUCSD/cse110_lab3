@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
-/* Element selector */
+/* Element selectors */
 body {
   background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 500% 500%;
@@ -47,7 +47,7 @@ img + figcaption {
   margin: auto;
 }
 
-/* ID selector */
+/* ID selectors */
 #audio {
   color: rgba(255, 255, 255, 1);
   font-family: "Helvetica Neue", sans-serif;
@@ -94,7 +94,7 @@ img + figcaption {
   min-width: 10%;
 }
 
-/* Universal Selector */
+/* Universal Selectors */
 * {
   text-align: justify;
   text-justify: inter-word;
@@ -102,7 +102,7 @@ img + figcaption {
   margin-right: 0.5cm;
 }
 
-/* Class selector */
+/* Class selectors */
 .row {
   text-align: center;
   color: hsla(120, 100%, 50%, 0.3);
